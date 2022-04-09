@@ -1,0 +1,43 @@
+body {
+  color: white;
+  background-color: #1B4F72;
+}
+
+#title {
+  font-size: 3em;
+}
+
+text {
+  fill: white;
+  font-size: 15px;
+}
+
+#container {
+  margin: 20px 0 0 0;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.bar {
+  fill: #FF8429;
+}
+
+.bar:hover {
+  fill: #FFBC5C;
+}
+
+#tooltip {
+  position: absolute;
+  font-size: 15px;
+  text-align: center;
+  width: 120px;					
+  height: auto;					
+  padding: 10px;
+  border: 0px;
+  border-radius: 3px;
+  background: #1B6F77;
+  pointer-events: none;
+  opacity: 0;
+}
