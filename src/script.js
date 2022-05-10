@@ -1,5 +1,5 @@
-const h = 700;
-const w = 1000;
+const h = 800;
+const w = 1100;
 const p = 60;
 
 const svg = d3.select('#container')
@@ -67,7 +67,7 @@ d3.json('https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/mas
     .attr('x', d => x(new Date(d[0])))
     .attr('y', d => y(d[1]))
     .attr('height', d => y(0) - y(d[1]))
-    .attr('width', d => w / data.length)
+    .attr('width', d => (w - p * 2) / data.length)
     .on('mouseover', (event, d) => {
       const left = event.pageX;
       const top = event.pageY;
